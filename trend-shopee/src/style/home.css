@@ -1,0 +1,166 @@
+@import url(../style/global.css);
+
+.carousel1 {
+  border-radius: 10px;
+
+  .card {
+    background-color: #008ecc;
+    padding: 20px;
+    height: 89%;
+    justify-content: space-between;
+  }
+  .card .info {
+    width: 50%;
+    padding: 40px;
+    color: white;
+  }
+  .card .info .offer {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .card .info .name {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 6px;
+  }
+
+  .card .img {
+    margin-right: 50px;
+  }
+}
+.con2 {
+  padding-top: 80px;
+}
+.featureProSection .container {
+  padding: 40px;
+}
+.container > .flex {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1133px) {
+  .carousel1 {
+    .card .info .offer {
+      color: white;
+      font-size: 30px;
+    }
+  }
+  .img {
+    align-items: center;
+  }
+  .img > img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .carousel1 {
+    .card .info .offer {
+      color: white;
+      font-size: 20px;
+    }
+    .card {
+      padding: 8px;
+    }
+    .card .info {
+      width: 50%;
+      padding: 10px;
+    }
+  }
+
+  .img > img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* .carousel1 {
+    .card .info .offer {
+      color: white;
+      font-size: 20px;
+    }
+    .card {
+      padding: 8px;
+    }
+    .card .info {
+      width: 50%;
+      padding: 10px;
+    }
+  }
+
+  .img > img {
+    width: 100px;
+  } */
+  .home > .section {
+    padding: 20px;
+    .con2 .container .items {
+      flex-direction: row;
+    }
+    .con2 .container {
+      padding: 10px;
+    }
+    .con2 .container .items .product {
+      height: 150px;
+      width: 120px;
+      .productInfo {
+        .category {
+          font-size: 13px;
+        }
+        .name {
+          font-size: 14px;
+        }
+        .price {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .featureProSection .container .items {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel1 {
+    .card .info .offer {
+      color: white;
+      font-size: 15px;
+    }
+    .card {
+      padding: 8px;
+    }
+    .card .info {
+      width: 60%;
+      padding: 10px;
+    }
+  }
+
+  .img > img {
+    width: 70px;
+  }
+  .home > .section {
+    padding: 20px;
+    .con2 .container .items {
+      flex-direction: row;
+    }
+
+    .con2 .container {
+      padding: 10px;
+    }
+
+    .con2 .container .items .product {
+      height: 119px;
+      width: 70px;
+      .productInfo {
+        .category {
+          font-size: 11px;
+        }
+        .name {
+          font-size: 12px;
+        }
+        .price {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

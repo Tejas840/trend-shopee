@@ -1,0 +1,75 @@
+@import url(./global.css);
+
+.cart .container {
+  .cartHead {
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.cartItem > .cartImg .color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.total {
+  margin-top: 10px;
+}
+
+.line {
+  margin: 8px 0;
+  border-bottom: 1px solid grey;
+}
+.cartItem {
+  text-align: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+.cart h3 {
+  margin: 50px 0;
+}
+
+.total {
+  flex-direction: row-reverse;
+  .box {
+    padding: 20px;
+    background-color: rgb(239, 239, 239);
+  }
+}
+.cartImg {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.cartImg > img {
+  width: 80px;
+  height: auto;
+}
+.quantitySelect {
+  gap: 5px;
+  justify-content: center;
+}
+.quantitySelect > button {
+  cursor: pointer;
+}
+.deleteIcon {
+  color: red;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.deleteIcon:hover {
+  opacity: 1;
+}
+.buttons {
+  gap: 20px;
+}
+.buttons > button {
+  background-color: red;
+}
+
+@media screen and (max-width: 940px) {
+  .cartImg > img {
+    width: 40px;
+    height: auto;
+  }
+}

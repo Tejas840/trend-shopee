@@ -1,0 +1,197 @@
+@import url("./global.css");
+
+.productSection > .flex {
+  width: 100%;
+  .filterCon {
+    width: 30%;
+    margin-right: 20px;
+  }
+  .con2 {
+    width: 90%;
+    .main {
+      justify-content: center;
+    }
+  }
+}
+
+.productList {
+  .gridView {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+.ListView {
+  gap: 20px;
+}
+.listProduct {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow1);
+  background-color: white;
+  .productImg {
+    width: 40%;
+  }
+  .productImg > img {
+    width: 100%;
+  }
+  .productInfo {
+    width: 60%;
+    margin-left: 20px;
+    .name {
+      color: black;
+      opacity: 1;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .price {
+      color: black;
+      opacity: 1;
+      font-weight: 400;
+      font-size: 15px;
+    }
+    .description {
+      padding-top: 10px;
+    }
+  }
+  .productInfo > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &:hover {
+    transform: scale(102%);
+    transition: 0.8 ease;
+    .productImg {
+      transform: scale(102%);
+      transition: 0.5 ease;
+    }
+  }
+}
+.sortSection {
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+.sort {
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  .viewToggle {
+    gap: 5px;
+  }
+  .products {
+    align-items: center;
+  }
+}
+.viewIcon {
+  cursor: pointer;
+  padding: 6px;
+  background-color: rgb(211, 211, 211);
+}
+.viewActive {
+  background-color: black;
+  color: white;
+}
+
+/* // filter */
+.filterSection {
+  padding: 10px;
+  .search {
+    margin-bottom: 10px;
+    .searchInput {
+      width: 90%;
+      padding: 10px;
+      box-shadow: var(--shadow1);
+    }
+  }
+  .category .categoryButton {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+  }
+  .category .categoryButton:hover {
+    border-bottom: 1px solid var(--primary-color);
+  }
+  .company {
+    display: none;
+  }
+  .clear {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .productList .gridView .product {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 965px) {
+  .productList {
+    .gridView {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+  .productList .gridView .product {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .products .flex {
+    flex-direction: column;
+  }
+  .productSection > .flex {
+    width: 100%;
+    .filterCon {
+      width: 100%;
+    }
+    .con2 {
+      width: 100%;
+    }
+  }
+  .filterSection > .search .searchInput {
+    width: 98%;
+    padding: 3px;
+  }
+  .filterSection > .category div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .filterSection > .category .categoryButton {
+    padding: 2px;
+  }
+  .filterSection > .category h3 {
+    display: none;
+  }
+
+  .con2 .sortSection {
+    padding: 5px 0;
+  }
+
+  .con2 .sortSection .sort {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    .viewToggle {
+      width: fit-content;
+      display: flex;
+      flex-direction: row;
+    }
+    .products {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .products p {
+      font-size: 12px;
+      text-align: center;
+    }
+    .sortInput {
+      width: fit-content;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
